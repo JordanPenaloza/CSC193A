@@ -11,7 +11,7 @@ moo_button.onclick = function() {
     const textArea = document.getElementById("user-input")
     textArea.value = textArea.value.toUpperCase();
     var str = textArea.value;
-    var parts = str.split(" ");
+    var parts = str.split(".");
     str = parts.join("-Moo");
     textArea.value = str;
 }
@@ -27,6 +27,7 @@ document.querySelectorAll('input[name="style"]').forEach((radio) => {
             textArea.style.fontWeight = "normal";
             textArea.style.color = "black";
             textArea.style.textDecoration = "none";
+            textArea.style.fontSize = "";
         }
     }
 })
